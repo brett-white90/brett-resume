@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --mainTextColor:#000;
+    --secondaryTextColor:(51 51 51);
+    --mainLinkColor:#0da2b8;
+    --mainBorderColor:rgb(218, 218, 218);
+    --mainBgColor:rgb(249, 250,251);
+}
+
+#email a {
+    color: white !important;
+}
+
+.company-name{
+    color: var(--mainLinkColor-dark);
+}
+
+*{
+    font-family: "Kanit", sans-serif;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+
+}
+
+body{
+    background-color: var(--mainBgColor);            
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+
+#container--main{
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+
+#bio, a{
+    font-weight: 300;
+}
+
+#user-name{
+    font-size: 38px;
+    line-height: 1em;
+}
+
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#email{
+    color: var(--mainTextColor);
+    animation-duration: 5s;
+}
+
+#socials--list{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a{
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover{
+    font-weight: 100;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+
+
+
+.download--icon {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds space between the link and the icon */
+    
+}
+
+
+.collapse-content {
+    display: none;
+    overflow: hidden;
+    padding-top: 15px;
+    
+}
+
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid #9F70FD; 
+    padding: 15px; /* Adjust padding as needed */
+}
+
+
+.flex-fill {
+    flex: 1;
+    text-align: left;
+    list-style: none;
+}
+
+.qual--list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+#qualifications--list{
+    list-style: none;
+   
+    
+}
+
+#stats--list {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stats--item { /* Updated class name */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+.counter[data-sign="+"]::after {
+    font-weight: 350;
+    content: "+"; /* Space after the plus sign */
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+
+.counter {
+    font-size: 1.4em;
+    font-weight: 425;
+    font-family: "Kanit";
+    color: var(--mainLinkColor);
+}
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+
+.card--techstack {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    display: flex; /* If you need align-items to work */
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Added color to transition */
+    cursor: pointer;
+}
+
+
+
+.card--techstack:hover {
+    transform: scale(1.1);
+    background-color: #9F70FD;
+    color: #fff; /* Assuming this will cascade correctly to child elements */
+}
+
+
+
+.card--work-history {
+    border-left: 2px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em; /* Initial left padding */
+    padding-right: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    transition: border-left 0.25s ease, box-shadow 0.25s ease, padding-left 0.25s ease; /* Smooth transition for hover effects */
+}
+
+.card--work-history:hover {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 5px solid #9F70FD; /* Increased border width */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding-left: calc(2em - 3px); /* Adjust padding to compensate for border change */
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 2px;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+    font-weight: 100;
+}
+
+
+
+:root{
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251);
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:#9F70FD;
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415fa;
+
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+
+}
