@@ -206,7 +206,7 @@ li{
 
 .card--techstack:hover {
     transform: scale(1.0);
-    background-color: #9F70FD;
+    background-color: #667ea6;
     color: #fff; /* Assuming this will cascade correctly to child elements */
 }
 
