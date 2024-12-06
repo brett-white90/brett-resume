@@ -86,13 +86,12 @@ body {
 
 /* Specific chart containers */
 #category-chart-main {
-    flex: 1;
     min-height: 0; /* Allow container to shrink */
 }
 
 #category-chart-brush {
-    height: 80px;
-    margin-top: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Responsive adjustments */

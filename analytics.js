@@ -295,13 +295,13 @@
                         });
 
 // Render all tile charts
-        arrMetric.render();
-        acvMetric.render();
-        daysMetric.render();
-        winMetric.render();
-        leadMetric.render();
-        oppMetric.render();
-        });
+    arrMetric.render();
+    acvMetric.render();
+    daysMetric.render();
+    winMetric.render();
+    leadMetric.render();
+    oppMetric.render();
+    });
 
 
         
@@ -315,9 +315,9 @@
             series.push([x, y]);
             baseval += 86400000;
             i++;
+            }
+            return series;
         }
-        return series;
-    }
             
     var data = generateDayWiseTimeSeries(new Date("22 Apr 2024").getTime(), 115, { min: 30, max: 90 });
         var options1 = {
@@ -428,10 +428,11 @@
                 }
             };
 
-            var chart2 = new ApexCharts(document.querySelector("#category-chart-brush"), options2);
-            chart2.render();
+        var chart2 = new ApexCharts(document.querySelector("#category-chart-brush"), options2);
+        chart2.render();
 
-            
+
+
 //Top Module ARR               
     var options = {
         series: [
@@ -450,10 +451,13 @@
                 ]
             }
         ],
-                chart: {
-                    type: 'bar',
-                    height: '100%',
-                    foreColor: '#fff'
+                    chart: {
+                        type: 'bar',
+                        height: 400,  // Set a fixed height initially
+                        foreColor: '#fff',
+                        toolbar: {
+                            show: false
+                        }
                 },
                 plotOptions: {
                     bar: {
@@ -522,9 +526,11 @@
             };
 
          
-            var chart = new ApexCharts(document.querySelector("#modules-chart"), options);
-            chart.render();
+        var chart = new ApexCharts(document.querySelector("#modules-chart"), options);
+        chart.render();
     
+
+
 //ARR by Category Pie
     var options = {
         series: [3979423, 2871597, 2463452, 1880386, 1574277, 860022, 757985, 189496],
@@ -604,8 +610,9 @@
                 }
             };
             
-            var chart = new ApexCharts(document.querySelector("#arr-category-chart"), options);
-            chart.render();
+        var chart = new ApexCharts(document.querySelector("#arr-category-chart"), options);
+        chart.render();
+
 
 // ARR by Customer Size 
     var options = {
@@ -640,5 +647,5 @@
                 }
             };
     
-            var chart = new ApexCharts(document.querySelector("#size-chart"), options);
-            chart.render();
+        var chart = new ApexCharts(document.querySelector("#size-chart"), options);
+        chart.render();
