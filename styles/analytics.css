@@ -14,24 +14,6 @@ body {
     gap: 24px;
 }
 
-/* Navigation */
-.nav-section {
-    padding: 0 0 12px 0;
-}
-
-.nav-back {
-    width: 100px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    font-family: monospace;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-}
-
 /* Metrics Section */
 .dashboard {
     display: grid;

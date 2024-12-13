@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
@@ -18,15 +17,14 @@
     <div id="container--main">
 
         <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="assets/images/bw_pp.jpg">
-
+            <img id="profile-pic" src="assets/images/bw_pp.jpg" alt="profile">
             <div>
                 <h1 id="user-name">Brett White</h1>
                 <p id="bio">Software consultant & technology enthusiast
                     <a href="https://www.netsuite.com/portal/products/erp.shtml" target="_blank">
                         <br />Oracle NetSuite</a>
                 </p>
-                <p id="email" class="animate__animated animate__headShake">
+                <p id="email" class="downlaod">
                     <a href="mailto:hello@brettwhite.io">👉 Want to say howdy?</a>
                 </p>
             </div>
@@ -34,18 +32,13 @@
 
         <section class="section--page">
             <div id="socials--list">
-                <a href="https://linkedin.com/in/bwhite90" target="_blank">Linkedin</a>
-                <a href="https://github.com/brett-white90" target="_blank">Github</a>
-                <a href="#" id="certificationsToggle">Certifications</a>
+                <a href="https://linkedin.com/in/bwhite90" target="_blank">LinkedIn</a>
+                <a href="https://github.com/brett-white90" target="_blank">GitHub</a>
+                <a href="certifications.html">Certifications</a>
                 <a href="analytics.html">Analytics</a>
-                <div class="download--icon">
-                <a href="assets/images/brett_white_resume.pdf" id="downloadResume" download> Resume</a>
-
-                </div>
+                <a href="assets/images/brett_white_resume.pdf" target="_blank" id="downloadResume">Resume</a>
             </div>
         </section>
-
-        <!-- Certifications Collapse Content -->
 
         <div id="certificationsCollapse" class="collapse-content" style="display: none;">
             <div class="card d-flex">
@@ -74,7 +67,7 @@
                     <div class="stats--item" d-flex flex-column align-items-center">
                         <div class="counter" data-target="14000000" data-format="currency" data-sign="+">0</div>
                         <h4>ARR Generated</h4>
-                    </div>
+                </div>
                     <div class="stats--item">
                         <div class="counter" data-target="500" data-format="number" data-sign="+">0</div>
                         <h4>Customer Wins</h4>

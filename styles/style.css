@@ -1,250 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-:root{
-    --mainTextColor:#000;
-    --secondaryTextColor:(51 51 51);
-    --mainLinkColor:#0da2b8;
-    --mainBorderColor:rgb(218, 218, 218);
-    --mainBgColor:rgb(249, 250,251);
-}
-
-#email a {
-    color: white !important;
-}
-
-.company-name{
-    color: var(--mainLinkColor-dark);
-}
-
-*{
-    font-family: "Roboto Mono", monospace;
-    line-height: 1.5em;
-    box-sizing: border-box;
-    color: var(--mainTextColor);
-
-}
-
-body{
-    background-color: var(--mainBgColor);            
-}
-
-p, span, li{
-    color: var(--secondaryTextColor);
-    font-size: 1em;
-
-}
-
-a{
-    text-decoration: none;
-    color: var(--mainLinkColor);
-    font-weight: 500;
-}
-
-li{
-    line-height: 1.9em;
-}
-
-
-#container--main{
-    max-width: 800px; 
-    margin: 0 auto;
-    padding: 1em;
-}
-
-.section--page{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    
-}
-
-#wrapper--hero{
-    display: flex;
-    align-items: center;
-    gap: 4em;
-}
-
-
-#bio, a{
-    font-weight: 300;
-}
-
-#user-name{
-    font-size: 38px;
-    line-height: 1em;
-}
-
-#profile-pic{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#email{
-    color: var(--mainTextColor);
-    animation-duration: 0s;
-}
-
-#socials--list{
-    display: flex;
-    justify-content: space-evenly;
-    column-gap: 1em;
-    flex-wrap: wrap;
-}
-
-#socials--list a{
-    font-weight: 300;
-    color: var(--secondaryTextColor);
-    font-size: 0.9em;
-    transition: 0.3s;
-}
-
-#socials--list a:hover{
-    font-weight: 100;
-    color: var(--mainLinkColor);
-    font-size: 0.9em;
-}
-
-
-
-.download--icon {
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Adds space between the link and the icon */
-    
-}
-
-
-.collapse-content {
-    display: none;
-    overflow: hidden;
-    padding-top: 15px;
-    
-}
-
-
-.d-flex {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap as needed */
-    text-align: center;
-    justify-content: space-evenly;
-    width: 100%;
-    border: 1px solid #506385; 
-    padding: 15px; /* Adjust padding as needed */
-}
-
-
-.flex-fill {
-    flex: 1;
-    text-align: left;
-    list-style: none;
-}
-
-.qual--list{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 30px;
-}
-
-#qualifications--list{
-    list-style: none;
-   
-    
-}
-
-#stats--list {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.stats--item { /* Updated class name */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-.counter[data-sign="+"]::after {
-    font-weight: 350;
-    content: "+"; /* Space after the plus sign */
-    display: inline-block;
-    vertical-align: middle;
-    
-}
-
-
-.counter {
-    font-size: 1.4em;
-    font-weight: 425;
-    font-family: "Roboto Mono";
-    color: var(--mainLinkColor);
-}
-
-#wrapper--techstack__items{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    font-size: 0.9em;
-}
-
-
-.card--techstack {
-    border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    display: flex; /* If you need align-items to work */
-    align-items: center;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Added color to transition */
-    cursor: pointer;
-}
-
-
-
-.card--techstack:hover {
-    transform: scale(1.0);
-    background-color: #667ea6;
-    color: #fff; /* Assuming this will cascade correctly to child elements */
-}
-
-
-
-.card--work-history {
-    border-left: 2px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em; /* Initial left padding */
-    padding-right: 2em;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    transition: border-left 0.25s ease, box-shadow 0.25s ease, padding-left 0.25s ease; /* Smooth transition for hover effects */
-}
-
-.card--work-history:hover {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    animation-name: example;
-    animation-duration: 0.25s;
-    border-left: 4px solid #667ea6; /* Increased border width */
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    padding-left: calc(2em - 1px); /* Adjust padding to compensate for border change */
-}
-
-.line-break{
-    background-color: var(--mainBorderColor);
-    height: 2px;
-}
-
-.card--project{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-top: 1px solid var(--mainBorderColor);
-    font-weight: 100;
-}
-
-
 
 :root{
     --mainTextColor-light:#000;
@@ -264,5 +18,376 @@ li{
     --mainLinkColor:var(--mainLinkColor-dark);
     --mainBorderColor:var(--mainBorderColor-dark);
     --mainBgColor:var(--mainBgColor-dark);
+}
+
+/* Base Styles */
+* {
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+body {
+    background-color: var(--mainBgColor);
+}
+
+p, span, li {
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+/* Container and Section Styles */
+#container--main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Hero Section */
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#bio, a {
+    font-weight: 300;
+}
+
+#user-name {
+    font-size: 38px;
+    line-height: 1em;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Email and Company Styles */
+#email {
+    color: var(--mainTextColor);
+    animation-duration: 0s;
+}
+
+#email a {
+    color: white !important;
+}
+
+.company-name {
+    color: var(--mainLinkColor-dark);
+}
+
+/* Social Links */
+#socials--list {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover {
+    font-weight: 100;
+    color: var(--mainLinkColor);
+}
+
+/* Navigation Section */
+.nav-section {
+    padding: 0 0 12px 0;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    background-color: var(--mainLinkColor);
+    color: var(--mainBgColor);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.back-button:hover {
+    background-color: #506385;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Flex and Grid Layouts */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid #506385;
+    padding: 15px;
+}
+
+.flex-fill {
+    flex: 1;
+    text-align: left;
+    list-style: none;
+}
+
+/* Stats Section */
+#stats--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stats--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    font-size: 1.4em;
+    font-weight: 425;
+    font-family: "Roboto Mono";
+    color: var(--mainLinkColor);
+}
+
+.counter[data-sign="+"]::after {
+    font-weight: 350;
+    content: "+";
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Qualifications List */
+.qual--list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+#qualifications--list {
+    list-style: none;
+}
+
+/* Tech Stack Section */
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.card--techstack:hover {
+    transform: scale(1.0);
+    background-color: #667ea6;
+    color: #fff;
+}
+
+/* Work History Cards */
+.card--work-history {
+    border-left: 2px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    transition: border-left 0.25s ease, box-shadow 0.25s ease, padding-left 0.25s ease;
+}
+
+.card--work-history:hover {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 4px solid #667ea6;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding-left: calc(2em - 1px);
+}
+
+/* Project Cards and Line Breaks */
+.card--project {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+    font-weight: 100;
+}
+
+.line-break {
+    background-color: var(--mainBorderColor);
+    height: 2px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #container--main {
+        padding: 0.8em;
+    }
+
+    #wrapper--hero {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    #profile-pic {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+    }
+
+    #user-name {
+        font-size: 32px;
+        margin: 0.5em 0;
+    }
+
+    #bio {
+        font-size: 0.95em;
+        margin: 1em 0;
+    }
+
+    #socials--list {
+        flex-direction: column;
+        gap: .75em;
+        align-items: center;
+        padding: 1em 0;
+    }
+
+    #socials--list a {
+        font-size: .8em;
+        padding: 0.5em 1em;
+        width: 80%;
+        text-align: center;
+        border: 1px solid var(--mainBorderColor);
+        border-radius: 5px;
+    }
+
+    #stats--list {
+        flex-direction: column;
+    }
+
+    .stats--item {
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .counter {
+        font-size: 1.2em;
+    }
+
+    .qual--list {
+        text-align: left;
+        margin: 0 auto;
+        font-size: .9em;
+        width: 98%;
+    }
+
+    #qualifications--list {
+        padding: 0 1em;
+    }
+
+    #qualifications--list li {
+        margin-bottom: 1em;
+    }
+
+    #wrapper--techstack__items {
+        justify-content: center;
+    }
+
+    .card--techstack {
+        min-width: 35%;
+        justify-content: center;
+    }
+
+    .card--work-history {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: .8em;
+    }
+
+    .card--work-history ul {
+        padding-left: 1.2em;
+
+    }
+    .card--project {
+        font-size: .8em;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1.5em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #container--main {
+        padding: 0.5em;
+    }
+
+    #profile-pic {
+        width: 110px;
+        height: 110px;
+    }
+
+    #user-name {
+        font-size: 28px;
+    }
+
+    .card--techstack {
+        min-width: 100%;
+    }
+
+    #socials--list a {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .d-flex {
+        flex-direction: row;
+    }
 
 }
